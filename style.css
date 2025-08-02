@@ -151,15 +151,15 @@ animation-duration: 8s; }
 
 .text-bubble {
   position: absolute;
-  font-size: 18px;
-  font-family: cursive, sans-serif;
-  color: #d63384;
-  background-color: rgba(255, 255, 255, 0.7);
+  background: #fff0f6;
+  color: #d72660;
+  border-radius: 20px;
   padding: 10px 20px;
-  border-radius: 25px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  animation: floatText 8s ease-in-out forwards;
-  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-size: 1.1em;
+  z-index: 10;
+  opacity: 0.9;
+  transition: opacity 0.5s;
 }
 
 @keyframes floatText {
