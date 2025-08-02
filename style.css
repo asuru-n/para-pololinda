@@ -160,6 +160,8 @@ animation-duration: 8s; }
   z-index: 10;
   opacity: 0.9;
   transition: opacity 0.5s;
+  animation: floatText 8s ease-in-out forwards;
+  white-space: nowrap;
 }
 
 @keyframes floatText {
