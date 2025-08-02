@@ -158,16 +158,15 @@ animation-duration: 8s; }
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   font-size: 1.1em;
   z-index: 10;
-  opacity: 0.9;
   transition: opacity 0.5s;
-  animation: floatText 8s linear forwards;
+  animation: floatText 8s ease-in-out forwards;
+  white-space: nowrap;
 }
 
 @keyframes floatText {
-  0%   { opacity: 0;   transform: scale(0.8) translateY(0); }
-  10%  { opacity: 1;   transform: scale(1)   translateY(-10px); }
-  90%  { opacity: 1;   transform: scale(1)   translateY(-120px); }
-  100% { opacity: 0;   transform: scale(1)   translateY(-150px); }
+  0% { opacity: 0; transform: scale(0.5) translateY(0px); }
+  50% { opacity: 1; transform: scale(1.2) translateY(-50px); }
+  100% { opacity: 0; transform: scale(1) translateY(-100px); }
 }
 
 @media (max-width: 768px) {
