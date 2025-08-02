@@ -59,26 +59,3 @@ function createTextBubble() {
 }
 
 setInterval(createTextBubble, 500);
-
-/* Add to your style.css */
-.download-btn {
-  position: fixed;
-  top: 16px;
-  left: 16px;
-  background: #fff0f6;
-  color: #d72660;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 1.5em;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  z-index: 1000;
-  transition: background 0.2s;
-}
-.download-btn:hover {
-  background: #ffe3ec;
-}
